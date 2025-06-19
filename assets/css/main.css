@@ -333,3 +333,162 @@ body {
   }
 }
 
+/* About
+--------------------------------------------------------------*/
+.about__content {
+  max-width: 50rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about__title {
+  font-size: var(--fs-xxl);
+  margin-bottom: 3rem;
+}
+
+.about__description {
+  margin-bottom: 3rem;
+}
+
+.skills {
+  justify-self: center;
+}
+
+.skills__title {
+  font-size: var(--fs-lg);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.skills__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skills__content {
+  background-color: var(--color-bg-secondary);
+  box-shadow: var(--box-shadow);
+  padding: 3rem;
+}
+
+.skills__item {
+  margin-bottom: 1rem;
+}
+
+.skills__subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills__item i {
+  color: var(--color-primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Breakpoints
+--------------------------------------------------------------*/
+
+/* Medium devices*/
+@media screen and (min-width: 560px) {
+  .service__wrapper {
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+  }
+
+  .qualification__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qualification__footer {
+    text-align: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .qualification__footer-text {
+    margin: 0;
+  }
+
+  .project__wrapper {
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+  }
+
+  .footer__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .hero__content {
+    text-align: initial;
+  }
+
+  .hero__title::after {
+    transform: none;
+    left: 0;
+  }
+
+  .hero__info {
+    justify-content: initial;
+  }
+
+  .hero__img {
+    justify-self: flex-end;
+  }
+}
+
+/* Large devices */
+
+@media screen and (min-width: 968px) {
+  .about__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__content {
+    margin: 0;
+  }
+
+  .about__content,
+  .skills__title {
+    text-align: initial;
+  }
+
+  .qualification__content,
+  .service__wrapper,
+  .project__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact__content {
+    margin: 0;
+    text-align: initial;
+  }
+
+  .footer__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
